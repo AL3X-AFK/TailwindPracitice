@@ -19,7 +19,8 @@
         <img
           src="./assets/logo.png"
           alt="Logo de Naciones RP"
-          class="h-106 object-cover mask-b-from-60% mask-b-to-95% mask-l-from-97% mask-l-to-100% mask-r-from-97% mask-r-to-100%"
+          class="h-106 object-cover 
+          mask-b-from-60% mask-b-to-95% mask-l-from-97% mask-l-to-100% mask-r-from-97% mask-r-to-100%"
         />
 
         <!-- Imagen de arriba (superpuesta) -->
@@ -105,7 +106,7 @@
         </a>
 
         <a
-          class="bg-[#db670e] social-button animate-fade-down animate-ease-linear animate-duration-300 animate-delay-400"
+          class="bg-orange-500 social-button animate-fade-down animate-ease-linear animate-duration-300 animate-delay-400"
           href="https://servers.fivem.net/servers/detail/89b373"
           target="_blank"
           aria-label="FiveM"
@@ -146,7 +147,7 @@
       <main class="pt-4 px-2 pb-16">
         <div class="grid grid-cols-3 grid-rows-2 gap-2 w-full">
           <a
-            href="https://www.youtube.com"
+            onclick="openModal('lspd')"
             class="relative rounded-3xl overflow-hidden bg-gradient-to-t from-gray-900 to-gray-700 text-white border border-cyan-900 flex flex-col items-start hover:scale-105 hover:contrast-115 transition col-span-2 p-7 min-h-[180px] group"
           >
             <img
@@ -171,7 +172,7 @@
           </a>
 
           <a
-            href="https://www.youtube.com"
+            onclick="openModal('staff')"
             class="relative rounded-3xl overflow-hidden bg-gradient-to-t from-gray-900 to-gray-700 text-white border border-cyan-900 flex flex-col items-start hover:scale-105 hover:contrast-115 transition col-span-1 p-7 min-h-[180px] group"
           >
             <img
@@ -188,12 +189,10 @@
             >
               Staff activo
             </span>
-
-            >
           </a>
 
           <a
-            href="https://www.youtube.com"
+            onclick="openModal('skate')"
             class="relative rounded-3xl overflow-hidden bg-gradient-to-t from-gray-900 to-gray-700 text-white border border-cyan-900 flex flex-col items-start hover:scale-105 hover:contrast-115 transition col-span-1 p-7 min-h-[180px] group"
           >
             <img
@@ -215,7 +214,7 @@
           </a>
 
           <a
-            href="https://www.youtube.com"
+            onclick="openModal('ems')"
             class="relative rounded-3xl overflow-hidden bg-gradient-to-t from-gray-900 to-gray-700 text-white border border-cyan-900 flex flex-col items-start hover:scale-105 hover:contrast-115 transition col-span-2 p-7 min-h-[180px] group"
           >
             <img
@@ -246,13 +245,13 @@
     <!-- Footer -->
     <!--==================================================================-->
     <footer class="text-center text-sm text-gray-800 mb-4 font-impact">
-      <div>
+      <div class="font-medium">
         &copy; 2026 Naciones RP. Todos los derechos reservados.
-        <p>
+        <p >
           Hecho con cariño por la comunidad de Naciones RP. ¡Únete a nosotros y
           sé parte de esta increíble aventura!
         </p>
-        <p>
+        <p class="font-normal">
           Desarrollado por
           <a
             href="https://github.com/AL3X-AFK"
@@ -263,5 +262,69 @@
         </p>
       </div>
     </footer>
+
+    <!-- Modal -->
+    <div id="modal" class="fixed inset-0 hidden items-center justify-center bg-black/60 z-50">
+      <div class="bg-white max-w-md w-full p-6 rounded-2xl shadow-xl relative">
+
+        <!-- Botón cerrar -->
+        <button id="closeModal"
+          class="absolute top-2 right-3 text-black text-2xl font-bold">
+          ×
+        </button>
+
+        <!-- Contenido dinámico -->
+        <h2 id="modalTitle" class="text-2xl font-bold mb-2"></h2>
+        <p id="modalText" class="text-sm text-gray-700"></p>
+
+      </div>
+    </div>
+
+    <script>
+  const modal = document.getElementById("modal");
+  const title = document.getElementById("modalTitle");
+  const text = document.getElementById("modalText");
+  const closeBtn = document.getElementById("closeModal");
+
+  const panels = {
+    lspd: {
+      title: "LSPD - Policía de Los Santos",
+      text: "Únete al cuerpo policial y protege la ciudad. Patrulla, investiga delitos y mantén el orden en Los Santos."
+    },
+    staff: {
+      title: "Staff Activo",
+      text: "Nuestro equipo de staff está siempre disponible para ayudarte y mantener el servidor justo y divertido."
+    },
+    skate: {
+      title: "Actividades",
+      text: "Participa en eventos, carreras, deportes urbanos y muchas actividades dentro del servidor."
+    },
+    ems: {
+      title: "EMS - Servicios Médicos",
+      text: "Salva vidas atendiendo emergencias, accidentes y ayudando a los ciudadanos de Los Santos."
+    }
+  };
+
+  function openModal(key) {
+    modal.classList.remove("hidden");
+    modal.classList.add("flex");
+
+    title.textContent = panels[key].title;
+    text.textContent = panels[key].text;
+  }
+
+  closeBtn.onclick = () => {
+    modal.classList.add("hidden");
+    modal.classList.remove("flex");
+  };
+
+  modal.onclick = (e) => {
+    if (e.target === modal) {
+      modal.classList.add("hidden");
+      modal.classList.remove("flex");
+    }
+  };
+</script>
+
   </body>
 </html>
