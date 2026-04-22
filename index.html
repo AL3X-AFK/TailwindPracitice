@@ -10,13 +10,25 @@
   <body
     class="max-w-xl mx-auto min-h-dvh bg-gradient-to-b from-[#b96ed6] via-[#b96ed6] to-[#c4fecd]"
   >
+    <!--==================================================================-->
+    <!-- Cabecera -->
+    <!--==================================================================-->
     <header class="text-white">
-      <img
-        src="./assets/logo.png"
-        alt="Logo de Naciones RP"
-        class="h-106 object-cover mx-auto mask-b-from-60% mask-b-to-95% mask-l-from-97% mask-l-to-100% mask-r-from-97% mask-r-to-100% 
-        animate-fade animate-duration-500 animate-ease-in"
-      />
+      <div class="relative w-fit mx-auto">
+        <!-- Imagen de abajo (fondo) -->
+        <img
+          src="./assets/logo.png"
+          alt="Logo de Naciones RP"
+          class="h-106 object-cover mask-b-from-60% mask-b-to-95% mask-l-from-97% mask-l-to-100% mask-r-from-97% mask-r-to-100%"
+        />
+
+        <!-- Imagen de arriba (superpuesta) -->
+        <img
+          src="./assets/logomain.png"
+          alt="Logo principal"
+          class="h-106 object-cover absolute top-0 left-0 animate-fade animate-duration-500 animate-ease-in z-10"
+        />
+      </div>
 
       <header class="flex flex-col items-center justify-center mb-5">
         <span
@@ -37,65 +49,16 @@
           </svg>
         </span>
 
-        <h1 class="text-3xl font-bold leading-tight mt-1 font-gta">Alex Valdez</h1>
+        <!-- <h1 class="text-3xl font-bold leading-tight mt-1 font-gta">Alex Valdez</h1> -->
       </header>
 
+      <!--==================================================================-->
+      <!-- Social Media Buttons -->
+      <!--==================================================================-->
       <section class="flex gap-2 justify-center">
         <a
-          class="bg-gray-900 social-button 
-          animate-fade-down animate-ease-linear animate-duration-300 animate-delay-0"
-          href="https://github.com"
-          target="_blank"
-          aria-label="GitHub"
-          title="Ir a GitHub"
-        >
-          <svg width="28" height="28">
-            <use xlink:href="./assets/sprite.svg#github" />
-          </svg>
-        </a>
-
-        <a
-          class="bg-purple-100 social-button
-          animate-fade-down animate-ease-linear animate-duration-300 animate-delay-100"
-          href="https://twitch.tv/kirutoby__"
-          target="_blank"
-          aria-label="Twitch"
-          title="Ir al Twitch de Kirutoby"
-        >
-          <svg width="28" height="28">
-            <use xlink:href="./assets/sprite.svg#twitch" />
-          </svg>
-        </a>
-
-        <a
-          class="bg-white social-button animate-fade-down animate-ease-linear animate-duration-300 animate-delay-200"
-          href="https://www.youtube.com/"
-          target="_blank"
-          aria-label="YouTube"
-          title="Ir al canal de YouTube"
-        >
-          <svg width="28" height="28">
-            <use xlink:href="./assets/sprite.svg#youtube" />
-          </svg>
-        </a>
-
-        <a
-          class="social-button bg-gradient-to-tr from-yellow-400 via-pink-600 to-purple-900 
-          animate-fade-down animate-ease-linear animate-duration-300 animate-delay-300"
-          href="https://instagram.com"
-          target="_blank"
-          aria-label="Instagram"
-          title="Ir al Instagram"
-        >
-          <svg width="28" height="28">
-            <use xlink:href="./assets/sprite.svg#instagram" />
-          </svg>
-        </a>
-
-        <a
-          class="bg-blue-50 social-button 
-          animate-fade-down animate-ease-linear animate-duration-300 animate-delay-400"
-          href="https://discord.com"
+          class="bg-[#4359ac] social-button animate-fade-down animate-ease-linear animate-duration-300 animate-delay-00"
+          href="https://discord.gg/XkbH2yTgQ"
           target="_blank"
           aria-label="Discord"
           title="Ir a Discord"
@@ -106,19 +69,69 @@
         </a>
 
         <a
-          class="bg-white social-button
-          animate-fade-down animate-ease-linear animate-duration-300 animate-delay-500"
-          href="https://linkedin.com"
+          class="social-button bg-gradient-to-tr from-yellow-400 via-pink-600 to-purple-900 animate-fade-down animate-ease-linear animate-duration-300 animate-delay-100"
+          href="https://instagram.com/naciones_roleplay"
           target="_blank"
-          aria-label="LinkedIn"
-          title="Ir a LinkedIn"
+          aria-label="Instagram"
+          title="Ir al Instagram"
         >
           <svg width="28" height="28">
-            <use xlink:href="./assets/sprite.svg#linkedin" />
+            <use xlink:href="./assets/sprite.svg#instagram" />
+          </svg>
+        </a>
+
+        <a
+          class="bg-black social-button animate-fade-down animate-ease-linear animate-duration-300 animate-delay-200"
+          href="https://tiktok.com/@nacionesroleplay"
+          target="_blank"
+          aria-label="TikTok"
+          title="Ir a TikTok"
+        >
+          <svg width="28" height="28">
+            <use xlink:href="./assets/sprite.svg#tiktok" />
+          </svg>
+        </a>
+
+        <a
+          class="bg-white social-button animate-fade-down animate-ease-linear animate-duration-300 animate-delay-300"
+          href="https://www.youtube.com/@NacionesRP"
+          target="_blank"
+          aria-label="YouTube"
+          title="Ir al canal de YouTube"
+        >
+          <svg width="28" height="28">
+            <use xlink:href="./assets/sprite.svg#youtube" />
+          </svg>
+        </a>
+
+        <a
+          class="bg-[#db670e] social-button animate-fade-down animate-ease-linear animate-duration-300 animate-delay-400"
+          href="https://servers.fivem.net/servers/detail/89b373"
+          target="_blank"
+          aria-label="FiveM"
+          title="Ir al servidor de FiveM"
+        >
+          <svg width="28" height="28">
+            <use xlink:href="./assets/sprite.svg#fivem" />
+          </svg>
+        </a>
+
+        <a
+          class="bg-purple-100 social-button animate-fade-down animate-ease-linear animate-duration-300 animate-delay-500"
+          href="https://twitch.tv/kirutoby__"
+          target="_blank"
+          aria-label="Twitch"
+          title="Ir al Twitch de Kirutoby"
+        >
+          <svg width="28" height="28">
+            <use xlink:href="./assets/sprite.svg#twitch" />
           </svg>
         </a>
       </section>
 
+      <!--==================================================================-->
+      <!-- Description -->
+      <!--==================================================================-->
       <p
         class="text-center mt-4 text-sm text-green-950 px-4 font-semibold text-balance font-impact"
       >
@@ -127,16 +140,23 @@
         ahora!
       </p>
 
+      <!--==================================================================-->
+      <!-- Paneles contenido -->
+      <!--==================================================================-->
       <main class="pt-4 px-2 pb-16">
         <div class="grid grid-cols-3 grid-rows-2 gap-2 w-full">
           <a
             href="https://www.youtube.com"
-            class="relative rounded-3xl overflow-hidden bg-gradient-to-t from-gray-900 to-gray-700 text-white border border-cyan-900 flex flex-col items-start hover:scale-105 hover:contrast-115 transition col-span-2 p-7 min-h-[180px]
-            group"
+            class="relative rounded-3xl overflow-hidden bg-gradient-to-t from-gray-900 to-gray-700 text-white border border-cyan-900 flex flex-col items-start hover:scale-105 hover:contrast-115 transition col-span-2 p-7 min-h-[180px] group"
           >
-            <img src="assets/lspd.jpg" class="absolute w-full h-full object-cover top-0 left-0" />
+            <img
+              src="assets/lspd.jpg"
+              class="absolute w-full h-full object-cover top-0 left-0"
+            />
 
-            <div class="absolute inset-0 bg-gradient-to-bl from-gray-50/0 to-black/50 h-full w-full z-10"></div>
+            <div
+              class="absolute inset-0 bg-gradient-to-bl from-gray-50/0 to-black/50 h-full w-full z-10"
+            ></div>
 
             <span
               class="absolute top-2 left-2 font-medium text-sm bg-black/60 px-2 py-1 rounded-xl z-20"
@@ -144,24 +164,29 @@
               Sé un agente de la ley
             </span>
 
-            <span class="absolute bottom-2 left-2 font-bold text-3xl z-20  transition-transform font-gta"
+            <span
+              class="absolute bottom-2 left-2 font-bold text-3xl z-20 transition-transform font-gta"
               >LSPD</span
             >
           </a>
 
           <a
             href="https://www.youtube.com"
-            class="relative rounded-3xl overflow-hidden bg-gradient-to-t from-gray-900 to-gray-700 text-white border border-cyan-900 flex flex-col items-start hover:scale-105 hover:contrast-115 transition col-span-1 p-7 min-h-[180px]
-            group"
+            class="relative rounded-3xl overflow-hidden bg-gradient-to-t from-gray-900 to-gray-700 text-white border border-cyan-900 flex flex-col items-start hover:scale-105 hover:contrast-115 transition col-span-1 p-7 min-h-[180px] group"
           >
-            <img src="assets/staff.jpg" class="absolute w-full h-full object-cover top-0 left-0" />
+            <img
+              src="assets/staff.jpg"
+              class="absolute w-full h-full object-cover top-0 left-0"
+            />
 
-            <div class="absolute inset-0 bg-gradient-to-bl from-gray-50/0 to-black/50 h-full w-full z-10"></div>
+            <div
+              class="absolute inset-0 bg-gradient-to-bl from-gray-50/0 to-black/50 h-full w-full z-10"
+            ></div>
 
             <span
               class="absolute top-2 left-2 font-medium text-sm bg-black/60 px-2 py-1 rounded-xl z-20"
             >
-              Staff Activo
+              Staff activo
             </span>
 
             >
@@ -169,17 +194,21 @@
 
           <a
             href="https://www.youtube.com"
-            class="relative rounded-3xl overflow-hidden bg-gradient-to-t from-gray-900 to-gray-700 text-white border border-cyan-900 flex flex-col items-start hover:scale-105 hover:contrast-115 transition col-span-1 p-7 min-h-[180px]
-            group"
+            class="relative rounded-3xl overflow-hidden bg-gradient-to-t from-gray-900 to-gray-700 text-white border border-cyan-900 flex flex-col items-start hover:scale-105 hover:contrast-115 transition col-span-1 p-7 min-h-[180px] group"
           >
-            <img src="assets/skate.jpeg" class="absolute w-full h-full object-cover top-0 left-0" />
+            <img
+              src="assets/skate.jpeg"
+              class="absolute w-full h-full object-cover top-0 left-0"
+            />
 
-            <div class="absolute inset-0 bg-gradient-to-bl from-gray-50/0 to-black/50 h-full w-full z-10"></div>
+            <div
+              class="absolute inset-0 bg-gradient-to-bl from-gray-50/0 to-black/50 h-full w-full z-10"
+            ></div>
 
             <span
               class="absolute top-2 left-2 font-medium text-sm bg-black/60 px-2 py-1 rounded-xl z-20"
             >
-              Muchas Actividades
+              Actividades
             </span>
 
             >
@@ -187,12 +216,16 @@
 
           <a
             href="https://www.youtube.com"
-            class="relative rounded-3xl overflow-hidden bg-gradient-to-t from-gray-900 to-gray-700 text-white border border-cyan-900 flex flex-col items-start hover:scale-105 hover:contrast-115 transition col-span-2 p-7 min-h-[180px]
-            group"
+            class="relative rounded-3xl overflow-hidden bg-gradient-to-t from-gray-900 to-gray-700 text-white border border-cyan-900 flex flex-col items-start hover:scale-105 hover:contrast-115 transition col-span-2 p-7 min-h-[180px] group"
           >
-            <img src="assets/ems.png" class="absolute w-full h-full object-cover top-0 left-0" />
+            <img
+              src="assets/ems.png"
+              class="absolute w-full h-full object-cover top-0 left-0"
+            />
 
-            <div class="absolute inset-0 bg-gradient-to-bl from-gray-50/0 to-black/50 h-full w-full z-10"></div>
+            <div
+              class="absolute inset-0 bg-gradient-to-bl from-gray-50/0 to-black/50 h-full w-full z-10"
+            ></div>
 
             <span
               class="absolute top-2 left-2 font-medium text-sm bg-black/60 px-2 py-1 rounded-xl z-20"
@@ -200,13 +233,35 @@
               Salva vidas y ayuda a la gente
             </span>
 
-            <span class="absolute bottom-2 left-2 font-bold text-3xl z-20  transition-transform font-gta"
+            <span
+              class="absolute bottom-2 left-2 font-bold text-3xl z-20 transition-transform font-gta"
               >EMS</span
             >
           </a>
-
         </div>
       </main>
     </header>
+
+    <!--==================================================================-->
+    <!-- Footer -->
+    <!--==================================================================-->
+    <footer class="text-center text-sm text-gray-800 mb-4 font-impact">
+      <div>
+        &copy; 2026 Naciones RP. Todos los derechos reservados.
+        <p>
+          Hecho con cariño por la comunidad de Naciones RP. ¡Únete a nosotros y
+          sé parte de esta increíble aventura!
+        </p>
+        <p>
+          Desarrollado por
+          <a
+            href="https://github.com/AL3X-AFK"
+            class="text-blue-600 hover:underline"
+            target="_blank"
+            >AL3X-AFK / Kirutoby</a
+          > <3
+        </p>
+      </div>
+    </footer>
   </body>
 </html>
