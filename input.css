@@ -1,9 +1,27 @@
-@import "tailwindcss";
+@import 'tailwindcss';
+@import "tailwindcss-animated";
+
+@font-face{
+    font-family: 'gta';
+    src: url('/assets/gta.woff2') format('woff2');
+    font-weight: 100 700;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face{
+    font-family: 'robotoL';
+    src: url('/assets/robotoL.woff2') format('woff2');
+    font-weight: 100 700;
+    font-display: swap;
+}
 
 @theme{
     --color-primary: #b96ed6;
     --color-primary-light: #c4fecd;
     --color-primary-dark: #b96ed6;
+    --font-gta: 'gta', system-ui, sans-serif;
+    --font-sans: 'robotoL', system-ui, sans-serif;
 }
 
 .social-button{
