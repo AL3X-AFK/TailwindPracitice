@@ -280,51 +280,7 @@
       </div>
     </div>
 
-    <script>
-  const modal = document.getElementById("modal");
-  const title = document.getElementById("modalTitle");
-  const text = document.getElementById("modalText");
-  const closeBtn = document.getElementById("closeModal");
-
-  const panels = {
-    lspd: {
-      title: "LSPD - Policía de Los Santos",
-      text: "Únete al cuerpo policial y protege la ciudad. Patrulla, investiga delitos y mantén el orden en Los Santos."
-    },
-    staff: {
-      title: "Staff Activo",
-      text: "Nuestro equipo de staff está siempre disponible para ayudarte y mantener el servidor justo y divertido."
-    },
-    skate: {
-      title: "Actividades",
-      text: "Participa en eventos, carreras, deportes urbanos y muchas actividades dentro del servidor."
-    },
-    ems: {
-      title: "EMS - Servicios Médicos",
-      text: "Salva vidas atendiendo emergencias, accidentes y ayudando a los ciudadanos de Los Santos."
-    }
-  };
-
-  function openModal(key) {
-    modal.classList.remove("hidden");
-    modal.classList.add("flex");
-
-    title.textContent = panels[key].title;
-    text.textContent = panels[key].text;
-  }
-
-  closeBtn.onclick = () => {
-    modal.classList.add("hidden");
-    modal.classList.remove("flex");
-  };
-
-  modal.onclick = (e) => {
-    if (e.target === modal) {
-      modal.classList.add("hidden");
-      modal.classList.remove("flex");
-    }
-  };
-</script>
+    <script src="assets/modal.js"></script>
 
   </body>
 </html>
