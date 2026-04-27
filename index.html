@@ -19,8 +19,7 @@
         <img
           src="./assets/logo.png"
           alt="Logo de Naciones RP"
-          class="h-106 object-cover 
-          mask-b-from-60% mask-b-to-95% mask-l-from-97% mask-l-to-100% mask-r-from-97% mask-r-to-100%"
+          class="h-106 object-cover mask-b-from-60% mask-b-to-95% mask-l-from-97% mask-l-to-100% mask-r-from-97% mask-r-to-100%"
         />
 
         <!-- Imagen de arriba (superpuesta) -->
@@ -237,6 +236,31 @@
               >EMS</span
             >
           </a>
+
+          <a
+            onclick="openModal('bandas')"
+            class="relative rounded-3xl overflow-hidden bg-gradient-to-t from-gray-900 to-gray-700 text-white border border-cyan-900 flex flex-col items-start hover:scale-105 hover:contrast-115 transition col-span-3 p-7 min-h-[180px] group"
+          >
+            <img
+              src="assets/banda.jpeg"
+              class="absolute w-full h-full object-cover top-0 left-0 object-top"
+            />
+
+            <div
+              class="absolute inset-0 bg-gradient-to-bl from-gray-50/0 to-black/50 h-full w-full z-10"
+            ></div>
+
+            <span
+              class="absolute top-2 left-2 font-medium text-sm bg-black/60 px-2 py-1 rounded-xl z-20"
+            >
+              Domina las calles y haz tu propio imperio criminal
+            </span>
+
+            <span
+              class="absolute bottom-2 left-2 font-bold text-3xl z-20 transition-transform font-gta"
+              >BANDAS</span
+            >
+          </a>
         </div>
       </main>
     </header>
@@ -245,9 +269,9 @@
     <!-- Footer -->
     <!--==================================================================-->
     <footer class="text-center text-sm text-gray-800 mb-4 font-impact">
-      <div class="font-medium">
+      <div class="font-medium text-balance">
         &copy; 2026 Naciones RP. Todos los derechos reservados.
-        <p >
+        <p>
           Hecho con cariño por la comunidad de Naciones RP. ¡Únete a nosotros y
           sé parte de esta increíble aventura!
         </p>
@@ -258,29 +282,43 @@
             class="text-blue-600 hover:underline"
             target="_blank"
             >AL3X-AFK / Kirutoby</a
-          > <3
+          >
+          <3
         </p>
       </div>
     </footer>
 
     <!-- Modal -->
-    <div id="modal" class="fixed inset-0 hidden items-center justify-center bg-black/60 z-50">
+    <div
+      id="modal"
+      class="fixed inset-0 hidden items-center justify-center bg-black/60 z-50"
+    >
       <div class="bg-white max-w-md w-full p-6 rounded-2xl shadow-xl relative">
-
         <!-- Botón cerrar -->
-        <button id="closeModal"
-          class="absolute top-2 right-3 text-black text-2xl font-bold">
+        <button
+          id="closeModal"
+          class="absolute top-2 right-3 text-black text-2xl font-bold"
+        >
           ×
         </button>
 
-        <!-- Contenido dinámico -->
+        <!-- Título -->
         <h2 id="modalTitle" class="text-2xl font-bold mb-2"></h2>
+
+        <!-- Imagen (MEJORADA) -->
+        <img
+          id="modalImage"
+          class="w-full h-48 object-cover object-top rounded-lg mb-3"
+        />
+
+        <!-- Texto principal -->
         <p id="modalText" class="text-sm text-gray-700"></p>
 
+        <!-- Extra -->
+        <p id="modalExtra" class="mt-4 text-sm text-gray-500 pt-2 whitespace-pre-line"></p>
       </div>
     </div>
 
     <script src="assets/modal.js"></script>
-
   </body>
 </html>

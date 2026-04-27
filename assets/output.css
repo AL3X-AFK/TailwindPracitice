@@ -22,6 +22,8 @@
     --color-pink-600: oklch(59.2% 0.249 0.584);
     --color-pink-700: oklch(52.5% 0.223 3.958);
     --color-gray-50: oklch(98.5% 0.002 247.839);
+    --color-gray-400: oklch(70.7% 0.022 261.325);
+    --color-gray-500: oklch(55.1% 0.027 264.364);
     --color-gray-700: oklch(37.3% 0.034 259.733);
     --color-gray-800: oklch(27.8% 0.033 256.848);
     --color-gray-900: oklch(21% 0.034 264.665);
@@ -45,6 +47,7 @@
     --font-weight-bold: 700;
     --font-weight-extrabold: 800;
     --leading-tight: 1.25;
+    --radius-lg: 0.5rem;
     --radius-xl: 0.75rem;
     --radius-2xl: 1rem;
     --radius-3xl: 1.5rem;
@@ -236,9 +239,6 @@
   .left-2 {
     left: calc(var(--spacing) * 2);
   }
-  .z-0 {
-    z-index: 0;
-  }
   .z-10 {
     z-index: 10;
   }
@@ -254,206 +254,8 @@
   .col-span-2 {
     grid-column: span 2 / span 2;
   }
-  .m-8 {
-    margin: calc(var(--spacing) * 8);
-  }
-  .m-47 {
-    margin: calc(var(--spacing) * 47);
-  }
-  .m-69 {
-    margin: calc(var(--spacing) * 69);
-  }
-  .m-83 {
-    margin: calc(var(--spacing) * 83);
-  }
-  .m-184 {
-    margin: calc(var(--spacing) * 184);
-  }
-  .m-202 {
-    margin: calc(var(--spacing) * 202);
-  }
-  .m-253 {
-    margin: calc(var(--spacing) * 253);
-  }
-  .m-270 {
-    margin: calc(var(--spacing) * 270);
-  }
-  .m-384 {
-    margin: calc(var(--spacing) * 384);
-  }
-  .m-388 {
-    margin: calc(var(--spacing) * 388);
-  }
-  .m-400 {
-    margin: calc(var(--spacing) * 400);
-  }
-  .m-402 {
-    margin: calc(var(--spacing) * 402);
-  }
-  .m-454 {
-    margin: calc(var(--spacing) * 454);
-  }
-  .m-460 {
-    margin: calc(var(--spacing) * 460);
-  }
-  .m-481 {
-    margin: calc(var(--spacing) * 481);
-  }
-  .m-500 {
-    margin: calc(var(--spacing) * 500);
-  }
-  .m-587 {
-    margin: calc(var(--spacing) * 587);
-  }
-  .m-653 {
-    margin: calc(var(--spacing) * 653);
-  }
-  .m-745 {
-    margin: calc(var(--spacing) * 745);
-  }
-  .m-754 {
-    margin: calc(var(--spacing) * 754);
-  }
-  .m-765 {
-    margin: calc(var(--spacing) * 765);
-  }
-  .m-882 {
-    margin: calc(var(--spacing) * 882);
-  }
-  .m-929 {
-    margin: calc(var(--spacing) * 929);
-  }
-  .m-940 {
-    margin: calc(var(--spacing) * 940);
-  }
-  .m-1005 {
-    margin: calc(var(--spacing) * 1005);
-  }
-  .m-1011 {
-    margin: calc(var(--spacing) * 1011);
-  }
-  .m-1014 {
-    margin: calc(var(--spacing) * 1014);
-  }
-  .m-1087 {
-    margin: calc(var(--spacing) * 1087);
-  }
-  .m-1111 {
-    margin: calc(var(--spacing) * 1111);
-  }
-  .m-1134 {
-    margin: calc(var(--spacing) * 1134);
-  }
-  .m-1844 {
-    margin: calc(var(--spacing) * 1844);
-  }
-  .m-1861 {
-    margin: calc(var(--spacing) * 1861);
-  }
-  .m-1930 {
-    margin: calc(var(--spacing) * 1930);
-  }
-  .m-1931 {
-    margin: calc(var(--spacing) * 1931);
-  }
-  .m-2075 {
-    margin: calc(var(--spacing) * 2075);
-  }
-  .m-2082 {
-    margin: calc(var(--spacing) * 2082);
-  }
-  .m-2127 {
-    margin: calc(var(--spacing) * 2127);
-  }
-  .m-2610 {
-    margin: calc(var(--spacing) * 2610);
-  }
-  .m-2682 {
-    margin: calc(var(--spacing) * 2682);
-  }
-  .m-2896 {
-    margin: calc(var(--spacing) * 2896);
-  }
-  .m-3030 {
-    margin: calc(var(--spacing) * 3030);
-  }
-  .m-3075 {
-    margin: calc(var(--spacing) * 3075);
-  }
-  .m-3232 {
-    margin: calc(var(--spacing) * 3232);
-  }
-  .m-3256 {
-    margin: calc(var(--spacing) * 3256);
-  }
-  .m-3395 {
-    margin: calc(var(--spacing) * 3395);
-  }
-  .m-3458 {
-    margin: calc(var(--spacing) * 3458);
-  }
-  .m-3721 {
-    margin: calc(var(--spacing) * 3721);
-  }
-  .m-3895 {
-    margin: calc(var(--spacing) * 3895);
-  }
-  .m-3908 {
-    margin: calc(var(--spacing) * 3908);
-  }
-  .m-4203 {
-    margin: calc(var(--spacing) * 4203);
-  }
-  .m-4578 {
-    margin: calc(var(--spacing) * 4578);
-  }
-  .m-4645 {
-    margin: calc(var(--spacing) * 4645);
-  }
-  .m-5155 {
-    margin: calc(var(--spacing) * 5155);
-  }
-  .m-5157 {
-    margin: calc(var(--spacing) * 5157);
-  }
-  .m-5883 {
-    margin: calc(var(--spacing) * 5883);
-  }
-  .m-5964 {
-    margin: calc(var(--spacing) * 5964);
-  }
-  .m-6720 {
-    margin: calc(var(--spacing) * 6720);
-  }
-  .m-6958 {
-    margin: calc(var(--spacing) * 6958);
-  }
-  .m-7178 {
-    margin: calc(var(--spacing) * 7178);
-  }
-  .m-7190 {
-    margin: calc(var(--spacing) * 7190);
-  }
-  .m-7561 {
-    margin: calc(var(--spacing) * 7561);
-  }
-  .m-8313 {
-    margin: calc(var(--spacing) * 8313);
-  }
-  .m-9697 {
-    margin: calc(var(--spacing) * 9697);
-  }
-  .m-9733 {
-    margin: calc(var(--spacing) * 9733);
-  }
-  .m-10020 {
-    margin: calc(var(--spacing) * 10020);
-  }
-  .m-11011 {
-    margin: calc(var(--spacing) * 11011);
-  }
-  .m-11463 {
-    margin: calc(var(--spacing) * 11463);
+  .col-span-3 {
+    grid-column: span 3 / span 3;
   }
   .mx-auto {
     margin-inline: auto;
@@ -469,6 +271,9 @@
   }
   .mb-2 {
     margin-bottom: calc(var(--spacing) * 2);
+  }
+  .mb-3 {
+    margin-bottom: calc(var(--spacing) * 3);
   }
   .mb-4 {
     margin-bottom: calc(var(--spacing) * 4);
@@ -497,6 +302,9 @@
   .h-5 {
     height: calc(var(--spacing) * 5);
   }
+  .h-48 {
+    height: calc(var(--spacing) * 48);
+  }
   .h-106 {
     height: calc(var(--spacing) * 106);
   }
@@ -517,15 +325,6 @@
   }
   .w-full {
     width: 100%;
-  }
-  .max-w-2xl {
-    max-width: var(--container-2xl);
-  }
-  .max-w-2xs {
-    max-width: var(--container-2xs);
-  }
-  .max-w-lvh {
-    max-width: 100lvh;
   }
   .max-w-md {
     max-width: var(--container-md);
@@ -548,9 +347,6 @@
   .cursor-crosshair {
     cursor: crosshair;
   }
-  .cursor-pointer {
-    cursor: pointer;
-  }
   .resize {
     resize: both;
   }
@@ -572,6 +368,9 @@
   .justify-center {
     justify-content: center;
   }
+  .justify-normal {
+    justify-content: normal;
+  }
   .gap-2 {
     gap: calc(var(--spacing) * 2);
   }
@@ -587,6 +386,9 @@
   .rounded-full {
     border-radius: calc(infinity * 1px);
   }
+  .rounded-lg {
+    border-radius: var(--radius-lg);
+  }
   .rounded-xl {
     border-radius: var(--radius-xl);
   }
@@ -594,32 +396,15 @@
     border-style: var(--tw-border-style);
     border-width: 1px;
   }
+  .border-t {
+    border-top-style: var(--tw-border-style);
+    border-top-width: 1px;
+  }
   .border-cyan-900 {
     border-color: var(--color-cyan-900);
   }
   .bg-\[\#4359ac\] {
     background-color: #4359ac;
-  }
-  .bg-\[\#9146ff\] {
-    background-color: #9146ff;
-  }
-  .bg-\[\#ca5801\] {
-    background-color: #ca5801;
-  }
-  .bg-\[\#db670e\] {
-    background-color: #db670e;
-  }
-  .bg-\[\#ff6f00\] {
-    background-color: #ff6f00;
-  }
-  .bg-\[blue-100\] {
-    background-color: blue-100;
-  }
-  .bg-\[ff6f00\] {
-    background-color: ff6f00;
-  }
-  .bg-\[purple-100\] {
-    background-color: purple-100;
   }
   .bg-black {
     background-color: var(--color-black);
@@ -636,32 +421,8 @@
       background-color: color-mix(in oklab, var(--color-black) 65%, transparent);
     }
   }
-  .bg-blue-50 {
-    background-color: var(--color-blue-50);
-  }
-  .bg-blue-100 {
-    background-color: var(--color-blue-100);
-  }
-  .bg-blue-300 {
-    background-color: var(--color-blue-300);
-  }
-  .bg-gray-900 {
-    background-color: var(--color-gray-900);
-  }
-  .bg-orange-400 {
-    background-color: var(--color-orange-400);
-  }
   .bg-orange-500 {
     background-color: var(--color-orange-500);
-  }
-  .bg-pink-400 {
-    background-color: var(--color-pink-400);
-  }
-  .bg-pink-600 {
-    background-color: var(--color-pink-600);
-  }
-  .bg-pink-700 {
-    background-color: var(--color-pink-700);
   }
   .bg-purple-100 {
     background-color: var(--color-purple-100);
@@ -825,137 +586,11 @@
     --tw-mask-left: linear-gradient(to left, var(--tw-mask-left-from-color) var(--tw-mask-left-from-position), var(--tw-mask-left-to-color) var(--tw-mask-left-to-position));
     --tw-mask-left-to-position: 100%;
   }
-  .mask-radial-from-0 {
-    mask-image: var(--tw-mask-linear), var(--tw-mask-radial), var(--tw-mask-conic);
-    mask-composite: intersect;
-    --tw-mask-radial-stops: var(--tw-mask-radial-shape) var(--tw-mask-radial-size) at var(--tw-mask-radial-position), var(--tw-mask-radial-from-color) var(--tw-mask-radial-from-position), var(--tw-mask-radial-to-color) var(--tw-mask-radial-to-position);
-    --tw-mask-radial: radial-gradient(var(--tw-mask-radial-stops));
-    --tw-mask-radial-from-position: calc(var(--spacing) * 0);
-  }
-  .mask-radial-from-0\% {
-    mask-image: var(--tw-mask-linear), var(--tw-mask-radial), var(--tw-mask-conic);
-    mask-composite: intersect;
-    --tw-mask-radial-stops: var(--tw-mask-radial-shape) var(--tw-mask-radial-size) at var(--tw-mask-radial-position), var(--tw-mask-radial-from-color) var(--tw-mask-radial-from-position), var(--tw-mask-radial-to-color) var(--tw-mask-radial-to-position);
-    --tw-mask-radial: radial-gradient(var(--tw-mask-radial-stops));
-    --tw-mask-radial-from-position: 0%;
-  }
-  .mask-radial-from-10 {
-    mask-image: var(--tw-mask-linear), var(--tw-mask-radial), var(--tw-mask-conic);
-    mask-composite: intersect;
-    --tw-mask-radial-stops: var(--tw-mask-radial-shape) var(--tw-mask-radial-size) at var(--tw-mask-radial-position), var(--tw-mask-radial-from-color) var(--tw-mask-radial-from-position), var(--tw-mask-radial-to-color) var(--tw-mask-radial-to-position);
-    --tw-mask-radial: radial-gradient(var(--tw-mask-radial-stops));
-    --tw-mask-radial-from-position: calc(var(--spacing) * 10);
-  }
-  .mask-radial-from-10\% {
-    mask-image: var(--tw-mask-linear), var(--tw-mask-radial), var(--tw-mask-conic);
-    mask-composite: intersect;
-    --tw-mask-radial-stops: var(--tw-mask-radial-shape) var(--tw-mask-radial-size) at var(--tw-mask-radial-position), var(--tw-mask-radial-from-color) var(--tw-mask-radial-from-position), var(--tw-mask-radial-to-color) var(--tw-mask-radial-to-position);
-    --tw-mask-radial: radial-gradient(var(--tw-mask-radial-stops));
-    --tw-mask-radial-from-position: 10%;
-  }
-  .mask-radial-from-50 {
-    mask-image: var(--tw-mask-linear), var(--tw-mask-radial), var(--tw-mask-conic);
-    mask-composite: intersect;
-    --tw-mask-radial-stops: var(--tw-mask-radial-shape) var(--tw-mask-radial-size) at var(--tw-mask-radial-position), var(--tw-mask-radial-from-color) var(--tw-mask-radial-from-position), var(--tw-mask-radial-to-color) var(--tw-mask-radial-to-position);
-    --tw-mask-radial: radial-gradient(var(--tw-mask-radial-stops));
-    --tw-mask-radial-from-position: calc(var(--spacing) * 50);
-  }
-  .mask-radial-from-50\% {
-    mask-image: var(--tw-mask-linear), var(--tw-mask-radial), var(--tw-mask-conic);
-    mask-composite: intersect;
-    --tw-mask-radial-stops: var(--tw-mask-radial-shape) var(--tw-mask-radial-size) at var(--tw-mask-radial-position), var(--tw-mask-radial-from-color) var(--tw-mask-radial-from-position), var(--tw-mask-radial-to-color) var(--tw-mask-radial-to-position);
-    --tw-mask-radial: radial-gradient(var(--tw-mask-radial-stops));
-    --tw-mask-radial-from-position: 50%;
-  }
-  .mask-radial-from-100 {
-    mask-image: var(--tw-mask-linear), var(--tw-mask-radial), var(--tw-mask-conic);
-    mask-composite: intersect;
-    --tw-mask-radial-stops: var(--tw-mask-radial-shape) var(--tw-mask-radial-size) at var(--tw-mask-radial-position), var(--tw-mask-radial-from-color) var(--tw-mask-radial-from-position), var(--tw-mask-radial-to-color) var(--tw-mask-radial-to-position);
-    --tw-mask-radial: radial-gradient(var(--tw-mask-radial-stops));
-    --tw-mask-radial-from-position: calc(var(--spacing) * 100);
-  }
-  .mask-radial-from-100\% {
-    mask-image: var(--tw-mask-linear), var(--tw-mask-radial), var(--tw-mask-conic);
-    mask-composite: intersect;
-    --tw-mask-radial-stops: var(--tw-mask-radial-shape) var(--tw-mask-radial-size) at var(--tw-mask-radial-position), var(--tw-mask-radial-from-color) var(--tw-mask-radial-from-position), var(--tw-mask-radial-to-color) var(--tw-mask-radial-to-position);
-    --tw-mask-radial: radial-gradient(var(--tw-mask-radial-stops));
-    --tw-mask-radial-from-position: 100%;
-  }
-  .mask-radial-to-0 {
-    mask-image: var(--tw-mask-linear), var(--tw-mask-radial), var(--tw-mask-conic);
-    mask-composite: intersect;
-    --tw-mask-radial-stops: var(--tw-mask-radial-shape) var(--tw-mask-radial-size) at var(--tw-mask-radial-position), var(--tw-mask-radial-from-color) var(--tw-mask-radial-from-position), var(--tw-mask-radial-to-color) var(--tw-mask-radial-to-position);
-    --tw-mask-radial: radial-gradient(var(--tw-mask-radial-stops));
-    --tw-mask-radial-to-position: calc(var(--spacing) * 0);
-  }
-  .mask-radial-to-0\% {
-    mask-image: var(--tw-mask-linear), var(--tw-mask-radial), var(--tw-mask-conic);
-    mask-composite: intersect;
-    --tw-mask-radial-stops: var(--tw-mask-radial-shape) var(--tw-mask-radial-size) at var(--tw-mask-radial-position), var(--tw-mask-radial-from-color) var(--tw-mask-radial-from-position), var(--tw-mask-radial-to-color) var(--tw-mask-radial-to-position);
-    --tw-mask-radial: radial-gradient(var(--tw-mask-radial-stops));
-    --tw-mask-radial-to-position: 0%;
-  }
-  .mask-radial-to-50 {
-    mask-image: var(--tw-mask-linear), var(--tw-mask-radial), var(--tw-mask-conic);
-    mask-composite: intersect;
-    --tw-mask-radial-stops: var(--tw-mask-radial-shape) var(--tw-mask-radial-size) at var(--tw-mask-radial-position), var(--tw-mask-radial-from-color) var(--tw-mask-radial-from-position), var(--tw-mask-radial-to-color) var(--tw-mask-radial-to-position);
-    --tw-mask-radial: radial-gradient(var(--tw-mask-radial-stops));
-    --tw-mask-radial-to-position: calc(var(--spacing) * 50);
-  }
-  .mask-radial-to-50\% {
-    mask-image: var(--tw-mask-linear), var(--tw-mask-radial), var(--tw-mask-conic);
-    mask-composite: intersect;
-    --tw-mask-radial-stops: var(--tw-mask-radial-shape) var(--tw-mask-radial-size) at var(--tw-mask-radial-position), var(--tw-mask-radial-from-color) var(--tw-mask-radial-from-position), var(--tw-mask-radial-to-color) var(--tw-mask-radial-to-position);
-    --tw-mask-radial: radial-gradient(var(--tw-mask-radial-stops));
-    --tw-mask-radial-to-position: 50%;
-  }
-  .mask-radial-to-70 {
-    mask-image: var(--tw-mask-linear), var(--tw-mask-radial), var(--tw-mask-conic);
-    mask-composite: intersect;
-    --tw-mask-radial-stops: var(--tw-mask-radial-shape) var(--tw-mask-radial-size) at var(--tw-mask-radial-position), var(--tw-mask-radial-from-color) var(--tw-mask-radial-from-position), var(--tw-mask-radial-to-color) var(--tw-mask-radial-to-position);
-    --tw-mask-radial: radial-gradient(var(--tw-mask-radial-stops));
-    --tw-mask-radial-to-position: calc(var(--spacing) * 70);
-  }
-  .mask-radial-to-70\% {
-    mask-image: var(--tw-mask-linear), var(--tw-mask-radial), var(--tw-mask-conic);
-    mask-composite: intersect;
-    --tw-mask-radial-stops: var(--tw-mask-radial-shape) var(--tw-mask-radial-size) at var(--tw-mask-radial-position), var(--tw-mask-radial-from-color) var(--tw-mask-radial-from-position), var(--tw-mask-radial-to-color) var(--tw-mask-radial-to-position);
-    --tw-mask-radial: radial-gradient(var(--tw-mask-radial-stops));
-    --tw-mask-radial-to-position: 70%;
-  }
-  .mask-radial-to-80 {
-    mask-image: var(--tw-mask-linear), var(--tw-mask-radial), var(--tw-mask-conic);
-    mask-composite: intersect;
-    --tw-mask-radial-stops: var(--tw-mask-radial-shape) var(--tw-mask-radial-size) at var(--tw-mask-radial-position), var(--tw-mask-radial-from-color) var(--tw-mask-radial-from-position), var(--tw-mask-radial-to-color) var(--tw-mask-radial-to-position);
-    --tw-mask-radial: radial-gradient(var(--tw-mask-radial-stops));
-    --tw-mask-radial-to-position: calc(var(--spacing) * 80);
-  }
-  .mask-radial-to-80\% {
-    mask-image: var(--tw-mask-linear), var(--tw-mask-radial), var(--tw-mask-conic);
-    mask-composite: intersect;
-    --tw-mask-radial-stops: var(--tw-mask-radial-shape) var(--tw-mask-radial-size) at var(--tw-mask-radial-position), var(--tw-mask-radial-from-color) var(--tw-mask-radial-from-position), var(--tw-mask-radial-to-color) var(--tw-mask-radial-to-position);
-    --tw-mask-radial: radial-gradient(var(--tw-mask-radial-stops));
-    --tw-mask-radial-to-position: 80%;
-  }
-  .mask-radial-to-90 {
-    mask-image: var(--tw-mask-linear), var(--tw-mask-radial), var(--tw-mask-conic);
-    mask-composite: intersect;
-    --tw-mask-radial-stops: var(--tw-mask-radial-shape) var(--tw-mask-radial-size) at var(--tw-mask-radial-position), var(--tw-mask-radial-from-color) var(--tw-mask-radial-from-position), var(--tw-mask-radial-to-color) var(--tw-mask-radial-to-position);
-    --tw-mask-radial: radial-gradient(var(--tw-mask-radial-stops));
-    --tw-mask-radial-to-position: calc(var(--spacing) * 90);
-  }
-  .mask-radial-to-90\% {
-    mask-image: var(--tw-mask-linear), var(--tw-mask-radial), var(--tw-mask-conic);
-    mask-composite: intersect;
-    --tw-mask-radial-stops: var(--tw-mask-radial-shape) var(--tw-mask-radial-size) at var(--tw-mask-radial-position), var(--tw-mask-radial-from-color) var(--tw-mask-radial-from-position), var(--tw-mask-radial-to-color) var(--tw-mask-radial-to-position);
-    --tw-mask-radial: radial-gradient(var(--tw-mask-radial-stops));
-    --tw-mask-radial-to-position: 90%;
-  }
-  .mask-radial-at-center {
-    --tw-mask-radial-position: center;
-  }
   .object-cover {
     object-fit: cover;
+  }
+  .object-top {
+    object-position: top;
   }
   .p-6 {
     padding: calc(var(--spacing) * 6);
@@ -975,6 +610,9 @@
   .py-1 {
     padding-block: calc(var(--spacing) * 1);
   }
+  .pt-2 {
+    padding-top: calc(var(--spacing) * 2);
+  }
   .pt-4 {
     padding-top: calc(var(--spacing) * 4);
   }
@@ -983,6 +621,9 @@
   }
   .text-center {
     text-align: center;
+  }
+  .text-justify {
+    text-align: justify;
   }
   .font-gta {
     font-family: var(--font-gta);
@@ -1010,14 +651,6 @@
     --tw-font-weight: var(--font-weight-bold);
     font-weight: var(--font-weight-bold);
   }
-  .font-extrabold {
-    --tw-font-weight: var(--font-weight-extrabold);
-    font-weight: var(--font-weight-extrabold);
-  }
-  .font-light {
-    --tw-font-weight: var(--font-weight-light);
-    font-weight: var(--font-weight-light);
-  }
   .font-medium {
     --tw-font-weight: var(--font-weight-medium);
     font-weight: var(--font-weight-medium);
@@ -1036,11 +669,20 @@
   .text-wrap {
     text-wrap: wrap;
   }
+  .whitespace-pre-line {
+    white-space: pre-line;
+  }
   .text-black {
     color: var(--color-black);
   }
   .text-blue-600 {
     color: var(--color-blue-600);
+  }
+  .text-gray-400 {
+    color: var(--color-gray-400);
+  }
+  .text-gray-500 {
+    color: var(--color-gray-500);
   }
   .text-gray-700 {
     color: var(--color-gray-700);
@@ -1084,9 +726,6 @@
     transition-property: transform, translate, scale, rotate;
     transition-timing-function: var(--tw-ease, var(--default-transition-timing-function));
     transition-duration: var(--tw-duration, var(--default-transition-duration));
-  }
-  .animate-delay-0 {
-    animation-delay: 0ms;
   }
   .animate-delay-100 {
     animation-delay: 100ms;
@@ -1340,41 +979,6 @@
   inherits: false;
   initial-value: transparent;
 }
-@property --tw-mask-radial-from-position {
-  syntax: "*";
-  inherits: false;
-  initial-value: 0%;
-}
-@property --tw-mask-radial-to-position {
-  syntax: "*";
-  inherits: false;
-  initial-value: 100%;
-}
-@property --tw-mask-radial-from-color {
-  syntax: "*";
-  inherits: false;
-  initial-value: black;
-}
-@property --tw-mask-radial-to-color {
-  syntax: "*";
-  inherits: false;
-  initial-value: transparent;
-}
-@property --tw-mask-radial-shape {
-  syntax: "*";
-  inherits: false;
-  initial-value: ellipse;
-}
-@property --tw-mask-radial-size {
-  syntax: "*";
-  inherits: false;
-  initial-value: farthest-corner;
-}
-@property --tw-mask-radial-position {
-  syntax: "*";
-  inherits: false;
-  initial-value: center;
-}
 @property --tw-leading {
   syntax: "*";
   inherits: false;
@@ -1576,13 +1180,6 @@
       --tw-mask-left-to-position: 100%;
       --tw-mask-left-from-color: black;
       --tw-mask-left-to-color: transparent;
-      --tw-mask-radial-from-position: 0%;
-      --tw-mask-radial-to-position: 100%;
-      --tw-mask-radial-from-color: black;
-      --tw-mask-radial-to-color: transparent;
-      --tw-mask-radial-shape: ellipse;
-      --tw-mask-radial-size: farthest-corner;
-      --tw-mask-radial-position: center;
       --tw-leading: initial;
       --tw-font-weight: initial;
       --tw-shadow: 0 0 #0000;
