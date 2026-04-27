@@ -29,15 +29,15 @@ const panels = {
   },
   ems: {
     title: "EMS - Servicios Médicos",
-    text: "Salva vidas atendiendo emergencias, accidentes y ayudando a los ciudadanos de Los Santos.",
+    text: "El servicio EMS es el encargado de atender todas las emergencias médicas en Los Santos. Su labor es fundamental para garantizar la supervivencia de los ciudadanos, actuando con rapidez, precisión y coordinación en todo tipo de situaciones.",
     image: "./assets/ems-map.jpg",
-    extra: "El hospital central está en Pillbox Hill, abierto 24/7."
+    extra: "📍 Ubicación principal: Hospital central en Pillbox Hill.\n\n🚑 Funciones principales:\n- Atención a heridos en accidentes de tráfico\n- Reanimación y estabilización en campo\n- Coordinación con LSPD en emergencias\n\n👨‍⚕️ Requisitos:\n- Responsabilidad y rapidez de respuesta\n- Trabajo en equipo\n- Conocimiento básico de protocolos médicos (RP)\n\n⚠️ Importante:\nLos EMS son un servicio neutral, su prioridad siempre es salvar vidas sin importar la situación.\n"
   },
   bandas: {
     title: "BANDAS - Imperio Criminal",
-    text: "Domina las calles y haz tu propio imperio criminal en el mundo de Los Santos.",
+    text: "Adéntrate en el mundo criminal de Los Santos y construye tu propio imperio desde cero. Las bandas dominan territorios, controlan negocios ilegales y luchan constantemente por el poder en las calles.",
     image: "./assets/banda.jpeg",
-    extra: "Forma parte de una banda y lucha por el control de las zonas del mapa."
+    extra: "🗺️ Cada banda puede dominar zonas del mapa, obteniendo beneficios y control estratégico sobre la ciudad.\n\n💰 Actividades ilegales:\n- Tráfico de drogas\n- Robos organizados\n- Secuestros y extorsión\n- Mercado negro\n\n🔫 Conflictos entre bandas:\n- Guerras por territorios\n- Enfrentamientos armados\n- Alianzas y traiciones\n\n👥 Organización interna:\n- Líderes y jerarquías\n- Reclutamiento de nuevos miembros\n- Roles dentro de la banda\n\n⚠️ Riesgos:\n- Intervención del LSPD\n- Pérdida de territorio\n- Conflictos constantes con otras bandas\n\nDominar las calles no es fácil. Solo las bandas más organizadas y estratégicas logran mantenerse en la cima."
   }
 };
 
