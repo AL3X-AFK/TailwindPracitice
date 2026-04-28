@@ -291,13 +291,13 @@
     <!-- Modal -->
     <div
       id="modal"
-      class="fixed inset-0 hidden items-center justify-center bg-black/60 z-50"
+      class="fixed inset-0 hidden bg-black/60 z-50 overflow-y-auto flex justify-center"
     >
-      <div class="bg-white max-w-md w-full p-6 rounded-2xl shadow-xl relative">
+      <div class="bg-white max-w-md w-full p-6 rounded-2xl shadow-xl relative my-10 max-h-[90vh] overflow-y-auto">
         <!-- Botón cerrar -->
         <button
           id="closeModal"
-          class="absolute top-2 right-3 text-black text-2xl font-bold"
+          class="sticky top-0 float-right text-black text-2xl font-bold bg-white rounded-full w-8 h-8 flex items-center justify-center hover:bg-gray-900 hover:text-white transition"
         >
           ×
         </button>

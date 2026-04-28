@@ -49,8 +49,8 @@ function openModal(key) {
   title.textContent = data.title;
   text.textContent = data.text;
 
-  image.src = data.image;        // 👈 primero imagen
-  extra.textContent = data.extra; // 👈 luego extra
+  image.src = data.image;        
+  extra.textContent = data.extra; 
 
   modal.classList.remove("hidden");
   modal.classList.add("flex");
